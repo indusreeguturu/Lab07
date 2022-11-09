@@ -1,20 +1,17 @@
-.center {
-  text-align: center;
+function init(){
+  
+  var input = document.getElementById('entryinput')
+  var pressButton = document.getElementById('entrybutton')
+  var output = document.getElementById('textoutput')
+  
+  function alertFunc() {
+    //sends the alert
+    alert('Daniel Lim: ' + input.value)
+    //changes h2
+    output.innerHTML = input.value;
+  }
+  
+  pressButton.addEventListener('click', alertFunc);
+
 }
-#container {
-  width: 400px;
-  margin: 50px auto 0;
-}
-#entryinput {
-  width: 100%;
-}
-#entrybutton {
-  width: 200px;
-  text-align: center;
-  color: #fff;
-  background-color: #c00;
-  padding: 2em 0;
-  margin: 20px auto;
-  font-size: 24px;
-  font-weight: bold;
-}
+window.addEventListener('load', init);
