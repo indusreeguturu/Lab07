@@ -6,7 +6,7 @@ function init(){
   
   function alertFunc() {
     //sends the alert
-    alert('Daniel Lim: ' + input.value)
+    alert('Indu sree: ' + input.value)
     //changes h2
     output.innerHTML = input.value;
   }
